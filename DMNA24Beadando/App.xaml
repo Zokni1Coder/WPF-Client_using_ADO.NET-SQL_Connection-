@@ -1,0 +1,9 @@
+﻿<Application x:Class="DMNA24Beadando.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:DMNA24Beadando"
+             StartupUri="Login.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

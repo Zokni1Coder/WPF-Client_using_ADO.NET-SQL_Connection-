@@ -1,0 +1,52 @@
+﻿<Window x:Class="DMNA24Beadando.Registration"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:DMNA24Beadando"
+        mc:Ignorable="d"
+        Title="Registration" Height="450" Width="800">
+    <Grid HorizontalAlignment="Center" Height="420" VerticalAlignment="Center" Width="790" Margin="0,0,0,0">
+        <Grid.Background>
+            <ImageBrush ImageSource="log.jpg"/>
+        </Grid.Background>
+        <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto"/>
+            </Grid.RowDefinitions>
+            <Border CornerRadius="20" Background="#2e3137">
+                <StackPanel HorizontalAlignment="Center" Height="250" Margin="0,0,0,0" VerticalAlignment="Center" Width="400">
+                    <Label Foreground="White" Content="Registration" FontWeight="Bold" HorizontalAlignment="Center" Margin="136,10,111,0" VerticalAlignment="Top" TextBlock.FontSize="22px" Width="153"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Foreground="White" Content="User name:" TextBlock.FontSize="20" Margin="0,0,0,0" Width="153"/>
+                        <TextBox x:Name="nev" FontSize="20" TextAlignment="Center" Foreground="White" Background="#545d6a" Height="32" Margin="35,0,0,0" Width="203"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Foreground="White" Content="Password:" TextBlock.FontSize="20" Margin="0,0,0,0"/>
+                        <PasswordBox x:Name="kod" FontSize="20" Foreground="White" Background="#545d6a" Height="32" Margin="91,0,0,0" Width="203"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Foreground="White" Content="Password again:" TextBlock.FontSize="20" Margin="0,0,0,0"/>
+                        <PasswordBox x:Name="kodujra" FontSize="20" Foreground="White" Background="#545d6a" Height="32" Margin="37,0,0,0" Width="203"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Foreground="White" Content="Are you Admin? The verify-code:" TextBlock.FontSize="20" Margin="0,0,0,0"/>
+                        <TextBox x:Name="admine" FontSize="20" TextAlignment="Center" Foreground="White" Background="#545d6a" Height="32" Margin="4,0,0,0" Width="90"/>
+                    </StackPanel>
+                    <Button Click="Button_Click" Cursor="Hand" FontSize="20" Foreground="White" Background="#545d6a" Content="Registration!" TextBlock.FontSize="20" Margin="0,10,0,10" Height="45">
+                        <Button.Template>
+                            <ControlTemplate TargetType="Button">
+                                <Border Background="{TemplateBinding Background}" CornerRadius="0,0,20,20">
+                                    <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                            </ControlTemplate>
+                        </Button.Template>
+                    </Button>
+                </StackPanel>
+            </Border>
+        </Grid>
+    </Grid>
+</Window>
