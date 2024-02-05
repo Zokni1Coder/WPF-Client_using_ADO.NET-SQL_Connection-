@@ -52,7 +52,7 @@
 ## Methods
 
 | Login page | Registration page | Main page |
-| ---------- | ------------ ---- | --------- |
+| ---------- | ----------------- | --------- |
 | bejelentkezesClick() | foglalt() | fillcombos() |
 | nyitas() | Button_Click() | Button_Click() |
 | Button_Click() | | Button_Click() |
